@@ -14,7 +14,27 @@
 
  //  array, objects, functions etc are reference data types
 
- 
+// const Human  = ["Ritesh","varun"]
+// let obj = {name:"Ritesh",
+//           age: 25,
+//           city: "Delhi"}
+          
+// const myFunction = function(){
+//     console.log("Hello World !!!")
+// }
+
+
+// stack (primitive)  heap (non-primitive)
+
+let myid = "Ritesh5421"
+let anotherid = myid
+anotherid = "Varun"
+console.log(myid)          // Ritesh5421
+console.log(anotherid)     // Varun
+
+
+
+
 // ------------------------- Example of primitive data types---------------------------------
 
 
@@ -70,30 +90,7 @@
 // Functions can be assigned to variables, passed as arguments to other functions, and returned from functions. 
 // Functions also create their own scope, which means that variables defined within a function are not accessible from outside the function.
 
-// Example of function scope:   
-function myFunction() {
-    let functionScopedVar = "I am inside the function";
-    console.log(functionScopedVar);                    // Accessible here
-}
- myFunction();
-
- console.log(functionScopedVar);                                      // Uncaught ReferenceError: functionScopedVar is not defined
-// The variable functionScopedVar is only accessible within myFunction.
-// This is known as function scope.
-
-//Example of passing functions as arguments:
-function greet(name) {
-     return "Hello, " + name + "!";
-}
-function processUserInput(callback) {
-     let name = "Alice";
-     console.log(callback(name));
-}
-                         
-
-processUserInput(greet); // Output: "Hello, Alice!"
-// In this example, the greet function is passed as a callback to processUserInput, demonstrating that functions can be treated as first-class citizens in JavaScript. 
-
-
+   
+            
 
 
