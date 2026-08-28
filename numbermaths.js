@@ -11,3 +11,5 @@ const score = 800
 console.log(score.toPrecision(2)); 
 
 console.log(score.toLocaleString('en-IN'));            // 800
+
+console.log(Math);
