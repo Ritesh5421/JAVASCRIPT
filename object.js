@@ -17,8 +17,10 @@ const regularuser = {
 
 }
 
-console.log(regularuser.fullname?.userfullname.firstname);     // ? to more protected use if else blah blah
+//console.log(regularuser.fullname?.userfullname.firstname);     // ? to more protected use if else blah blah
 
+const {fullname} = regularuser
+console.log(fullname);
 
                         // Json small googly types difference b/w object and json
 // {                               
@@ -28,3 +30,9 @@ console.log(regularuser.fullname?.userfullname.firstname);     // ? to more prot
 // }
                    // we will get API IN in the form of objects and arrays and in it there are objects and we will convert into
                    //      JSON FORMATTER 
+
+                   // react somelike related to javascript 
+const navbar = ({company}) => {
+
+}
+navbar(company = "Ritesh")
